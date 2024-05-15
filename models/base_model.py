@@ -23,8 +23,3 @@ class BaseModel:
         json['updated_at'] = json['updated_at'].isoformat()
 
         return json
-
-
-model = BaseModel()
-print(model)
-model.save()
