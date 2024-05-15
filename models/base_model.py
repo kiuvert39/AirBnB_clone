@@ -4,10 +4,20 @@ from datetime import datetime
 
 class BaseModel:
 
-    def __init__(self) -> None:
-        self.id = str(uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = self.created_at
+    def __init__(self,*args, **kwargs) -> None:
+        time_format = '%Y-%m-%dT%H:%M:%S.%f'
+        if kwargs:
+            for k, v in kwargs.items():
+                if k == '__class__':
+                    continue
+                elif k == 'created_at' or k == 'updated_at':
+                    setattr(self, k, datetime.strptime(v, time_format))
+                else:
+                    setattr(self, k, v)
+        else:    
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = self.created_at
 
     def __str__(self) -> str:
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
