@@ -21,10 +21,11 @@ class HBNBCommand(cmd.Cmd):
     
     prompt = "(hbnd) "
 
-    def do_quit(self):
-        """ ... """
+    def do_quit(self, arg):
+        """Quit command to exit the program"""
         return True
 
     do_EOF = do_quit
-    
-HBNBCommand().cmdloop()
+
+if __name__ == "__main__":
+    HBNBCommand().cmdloop()
