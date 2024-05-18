@@ -25,6 +25,10 @@ class HBNBCommand(cmd.Cmd):
         """Quit command to exit the program"""
         return True
 
+    def emptyline(self):
+        """Overides emptyline default function to do nothing"""
+        pass
+
     do_EOF = do_quit
 
 if __name__ == "__main__":
