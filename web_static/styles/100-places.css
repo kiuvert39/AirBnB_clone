@@ -1,0 +1,88 @@
+.amenities1{
+    margin-left: -39px;
+    margin-top: 84px;
+
+}
+
+.amenities1 h2{
+    font-size: 16px;
+    margin-bottom: -75px;
+    position: relative;
+    left: -134px;
+}    
+
+.tv{
+    display: flex;
+    gap: 12px;
+}
+
+.tvtext{
+    margin-top: 25px;
+}
+
+.tv h6{
+    font-size: 12px;
+}
+.wifi{
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+    
+}
+.wifi h6,.pet h6{
+    font-size: 12px;
+    position: relative;
+    bottom: 25px;
+}
+.pet{
+    display: flex;
+    gap: 12px;
+    position: relative;
+    top: -40px;
+    overflow: hidden;
+}
+
+.reviews{
+    margin-top: 40px;
+    position: relative;
+    top: -80px;
+}
+.pet2{
+    display: flex;
+    gap: 12px;
+    position: relative;
+    top: 0px;
+   margin-top: 40px;
+    overflow: hidden;
+}
+
+.pet2 h6{
+    position: relative;
+    top: -20px;
+}
+
+.reviews h2{
+    font-size: 16px;
+    position: relative;
+    margin-right: 320px;
+}
+
+.reviews2 h2{
+    font-size: 16px;
+    position: relative;
+    margin-right: 320px;
+}
+.reviews h3 p{
+    position: relative;
+    top: -45px;
+    left: 4px;
+} 
+.reviews div{
+    border-bottom: solid #DDDDDD 1px;
+    
+}
+
+.reviews2 div{
+    border-bottom: solid #DDDDDD 1px;
+    
+}
